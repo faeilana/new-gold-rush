@@ -174,6 +174,7 @@
     <button class="nav-btn" onclick="go('sj')">San Jose</button>
     <button class="nav-btn" onclick="go('sac')">Sacramento</button>
     <button class="nav-btn" onclick="go('timeline')">Timeline</button>
+    <button class="nav-btn" onclick="go('conclusion')">Conclusion</button>
     <button class="nav-btn" onclick="go('resources')">Resources</button>
     <button class="nav-btn" onclick="go('works')">Works Cited</button>
   </div>
@@ -312,7 +313,7 @@
   <div class="city-content">
     <div class="summary-box"><p>San Jose is right in the middle of Silicon Valley, with Apple, Google and other big tech companies all around it. Even though it has been the city most directly impacted by the growth of the tech industry, it has the weakest tenant protection in the Bay Area. This has made people with low incomes to be forced to move out.</p></div>
     <div class="city-img-wrap">
-      <img src="./sanjose.jpeg" alt="San Jose" class="city-img" style="height:auto;object-fit:contain;max-height:320px;"/>
+      <img src="./sanjose.jpeg" alt="San Jose" class="city-img" style="height:auto;max-height:400px;object-fit:contain;background:#0a0a0a;"/>
       <div class="city-img-caption">San Jose, CA</div>
     </div>
     <div class="body-text">
@@ -338,7 +339,7 @@
   <div class="city-content">
     <div class="summary-box"><p>Sacramento used to be where people could stay when they could not afford the Bay Area. However, that changed after 2020 when remote work allowed tech employees to move to Sacramento and still work in a high-paying job which led to higher rents and community displacement.</p></div>
     <div class="city-img-wrap">
-      <img src="./sacramento.jpeg" alt="Sacramento" class="city-img" style="height:auto;object-fit:contain;max-height:320px;"/>
+      <img src="./sacramento.jpeg" alt="Sacramento" class="city-img" style="height:auto;max-height:400px;object-fit:contain;background:#0a0a0a;"/>
       <div class="city-img-caption">Sacramento, CA</div>
     </div>
     <div class="body-text">
@@ -366,6 +367,23 @@
     <div class="tl-item"><div class="tl-yr">2020</div><div class="tl-ct"><h4>COVID-19 Hits, Forcing Remote Work</h4></div></div>
     <div class="tl-item"><div class="tl-yr">2022</div><div class="tl-ct"><h4>Sacramento Housing Crisis</h4></div></div>
     <div class="tl-item"><div class="tl-yr">2023</div><div class="tl-ct"><h4>Mass Tech Layoffs — Will the Housing Crisis Ease?</h4></div></div>
+  </div>
+</div>
+
+<!-- CONCLUSION -->
+<div id="page-conclusion" class="page">
+  <div class="wc-header">
+    <div class="section-label" style="color:var(--gold)">Final Thoughts</div>
+    <h1>Conclusion</h1>
+  </div>
+  <div class="wc-body">
+    <div class="body-text" style="color:rgba(242,235,217,0.7);">
+      <p>Displacement that is caused by tech has become a serious problem in California. It is changing the character of communities and making folks sell or give up places they've lived. It began in San Francisco, but now Oakland, San Jose, Sacramento are all experiencing the same displacement. This shows that displacement becomes more widespread.</p>
+      <p>Based on the data provided, there is a clear trend across all four cities. In San Francisco, middle-income neighborhoods became wealthier, and the middle class dropped from 60% to 41% between 1990 and 2010. In Oakland, rents went up by 80% in five years. During that period, there were 32,402 eviction notices, and the Black population fell by more than a third. In San Jose, where tenant protections are weakest in Silicon Valley, 24% of Latino renters spent unsafe amounts of their income on housing. Half of those surveyed worried about being forced to move within a year. In Sacramento, which used to be affordable, rents rose by 33% in three years, and homelessness increased by 67%.</p>
+      <p>This type of displacement is like a new form of colonization. It forces people out of their homes, away from their resources and culture, while newcomers gain most of the wealth and benefits. The 2013 Google Bus protests brought this issue to light. Private shuttles took tech workers through working-class neighborhoods, showing how the tech industry grew while pushing out the people who shaped these communities.</p>
+      <p>Sacramento's changes teach an important lesson: moving to cheaper places does not fix the problem of displacement. If the main economic forces are not tackled, the crisis would simply shift somewhere else. After 2020, remote work accelerated this trend. Without strong tenant protections, more affordable housing, and community ownership, displacement will continue to reshape California, pushing vulnerable people out.</p>
+      <p>It is still uncertain whether the tech layoffs in 2023 will address this crisis. However, evidence suggests that any relief will be temporary unless major policy changes occur. The issue extends beyond higher rents. It also involves who gets to stay and whether cities can expand without losing the communities that made them strong.</p>
+    </div>
   </div>
 </div>
 
@@ -442,7 +460,7 @@
 </div>
 
 <script>
-  const pages = ['home','sf','oak','sj','sac','timeline','resources','works'];
+  const pages = ['home','sf','oak','sj','sac','timeline','conclusion','resources','works'];
   function go(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
